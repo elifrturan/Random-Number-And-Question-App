@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEACC"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTopla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Sum"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/txtMultiply"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/txtQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/toggleSub"
+        app:layout_constraintStart_toStartOf="@+id/toggleDivision"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.608" />
+
+    <TextView
+        android:id="@+id/txtMultiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="92dp"
+        android:text="Multiply"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txtTopla"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ToggleButton
+        android:id="@+id/toggleMultiply"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#5C5A5B"
+        android:textColor="#FFFFFF"
+        android:textOff="OPEN"
+        android:textOn="CLOSE"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/toggleSum"
+        app:layout_constraintEnd_toEndOf="@+id/txtMultiply"
+        app:layout_constraintStart_toStartOf="@+id/txtMultiply"
+        app:layout_constraintTop_toBottomOf="@+id/txtMultiply"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="80dp"
+        android:text="Subtraction"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toggleMultiply" />
+
+    <ToggleButton
+        android:id="@+id/toggleSub"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="#5C5A5B"
+        android:textColor="#FFFFFF"
+        android:textOff="OPEN"
+        android:textOn="CLOSE"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/toggleDivision"
+        app:layout_constraintEnd_toEndOf="@+id/txtSub"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/txtSub"
+        app:layout_constraintTop_toBottomOf="@+id/txtSub"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WELCOME"
+        android:textColor="#9C27B0"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <EditText
+        android:id="@+id/editTextGuess"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Enter Your Result"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtQuestion"
+        app:layout_constraintStart_toStartOf="@+id/txtQuestion"
+        app:layout_constraintTop_toBottomOf="@+id/txtQuestion" />
+
+    <TextView
+        android:id="@+id/txtDivision"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="44dp"
+        android:text="Division"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/txtSub"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toggleSum" />
+
+    <ToggleButton
+        android:id="@+id/toggleSum"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#5C5A5B"
+        android:textColor="#FFFFFF"
+        android:textOff="OPEN"
+        android:textOn="CLOSE"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtTopla"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/txtTopla"
+        app:layout_constraintTop_toBottomOf="@+id/txtTopla" />
+
+    <Button
+        android:id="@+id/btnGuess"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="48dp"
+        android:text="MAKE A GUESS"
+        app:layout_constraintBottom_toBottomOf="@+id/btnBring"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextGuess" />
+
+    <Button
+        android:id="@+id/btnBring"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="15dp"
+        android:text="BRING A QUESTION"
+        app:layout_constraintEnd_toStartOf="@+id/btnGuess"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextGuess" />
+
+    <ToggleButton
+        android:id="@+id/toggleDivision"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="20dp"
+        android:background="#5C5A5B"
+        android:textColor="#FFFFFF"
+        android:textOff="OPEN"
+        android:textOn="CLOSE"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtDivision"
+        app:layout_constraintHorizontal_bias="0.786"
+        app:layout_constraintStart_toStartOf="@+id/txtDivision"
+        app:layout_constraintTop_toBottomOf="@+id/txtDivision" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:textAlignment="center"
+        android:textColor="#673AB7"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnGuess"
+        app:layout_constraintStart_toStartOf="@+id/btnBring"
+        app:layout_constraintTop_toBottomOf="@+id/editTextGuess" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
